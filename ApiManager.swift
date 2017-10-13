@@ -15,21 +15,13 @@ final class ApiManager {
     static let sharedInstance = ApiManager()
     private init() {}
     
-//    https://maps.googleapis.com/maps/api/geocode/json?address=lohia+nagar
     let baseUrl: String = "https://maps.googleapis.com/maps/api/geocode/json?"
     var parameters: [String: Any] = [:]
-    let encoding: URLEncoding = URLEncoding.default
-    let headers: HTTPHeaders = [:]
-    
     
     public func getLocations(address: String, showResponse: @escaping(_ customLocation: CustomLocationResponse?) -> Void, showError: @escaping() -> Void) {
         let path = baseUrl
         let url = URL(string: path)
         parameters["address"] = address
-        
-//        let path = baseURL + "sources"
-//        let url = URL(string: path)
-//        let method: HTTPMethod = .get
         
         getResponse(url: url!,parameters: parameters, completion: { (_ responseType: CustomLocationResponse?, _ error: Error?) -> Void in
             if error != nil {
@@ -46,12 +38,3 @@ final class ApiManager {
         })
     }
 }
-
-//private func getResponse<T: Mappable>(url: URL,method: HTTPMethod, parameters: [String: Any], encoding: URLEncoding, headers: HTTPHeaders, completion:@escaping(_ responseType: T?, _ error: Error?) -> Void) {
-//    Alamofire.request(url).response(completionHandler: {(response:DataResponse<T>) -> Void in
-//        completion(response.result.value, response.error)
-//
-////    Alamofire.request(url,method: .get, parameters: parameters, encoding: encoding, headers: headers).responseObject(completionHandler:     })
-//})
-//    }
-//}
