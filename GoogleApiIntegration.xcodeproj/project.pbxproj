@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23890582A882A06984A7FDD9 /* Pods_GoogleApiIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A3E4FC3F4B5536C0EE8BFB /* Pods_GoogleApiIntegration.framework */; };
 		750984CF1F8D072D009D9FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750984CE1F8D072D009D9FB9 /* AppDelegate.swift */; };
 		750984D11F8D072D009D9FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750984D01F8D072D009D9FB9 /* ViewController.swift */; };
 		750984D41F8D072D009D9FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750984D21F8D072D009D9FB9 /* Main.storyboard */; };
 		750984D61F8D072D009D9FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750984D51F8D072D009D9FB9 /* Assets.xcassets */; };
 		750984D91F8D072D009D9FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750984D71F8D072D009D9FB9 /* LaunchScreen.storyboard */; };
+		757ECBD41F8FA66E00D63C17 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ECBD31F8FA66E00D63C17 /* ApiManager.swift */; };
+		757ECBD61F8FA68800D63C17 /* CustomLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ECBD51F8FA68800D63C17 /* CustomLocationResponse.swift */; };
+		757ECBD81F8FA69C00D63C17 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757ECBD71F8FA69C00D63C17 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17F95A4FEB40EEF8A07BAA74 /* Pods-GoogleApiIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleApiIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		750984CB1F8D072D009D9FB9 /* GoogleApiIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleApiIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750984CE1F8D072D009D9FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750984D01F8D072D009D9FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,12 @@
 		750984D51F8D072D009D9FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750984D81F8D072D009D9FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750984DA1F8D072D009D9FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		757ECBD31F8FA66E00D63C17 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		757ECBD51F8FA68800D63C17 /* CustomLocationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLocationResponse.swift; sourceTree = "<group>"; };
+		757ECBD71F8FA69C00D63C17 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		75C7796E1F8D090F0086745E /* GoogleApiIntegration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleApiIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3FC7CB1B4104B924C26BFA3 /* Pods-GoogleApiIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleApiIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		D4A3E4FC3F4B5536C0EE8BFB /* Pods_GoogleApiIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleApiIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23890582A882A06984A7FDD9 /* Pods_GoogleApiIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E8DCA8E582ADB4FFA9206F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A3E4FC3F4B5536C0EE8BFB /* Pods_GoogleApiIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		750984C21F8D072D009D9FB9 = {
 			isa = PBXGroup;
 			children = (
 				750984CD1F8D072D009D9FB9 /* GoogleApiIntegration */,
 				750984CC1F8D072D009D9FB9 /* Products */,
+				B2D91827FB9A60A56632556E /* Pods */,
+				4E8DCA8E582ADB4FFA9206F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,76 @@
 		750984CD1F8D072D009D9FB9 /* GoogleApiIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				750984CE1F8D072D009D9FB9 /* AppDelegate.swift */,
-				750984D01F8D072D009D9FB9 /* ViewController.swift */,
-				750984D21F8D072D009D9FB9 /* Main.storyboard */,
+				757ECBD01F8FA4FD00D63C17 /* Data model */,
+				7582ED341F8E3836005EFDCE /* StoryBoard and Xibs */,
+				7582ED331F8E3822005EFDCE /* View Controllers */,
+				7582ED321F8E3802005EFDCE /* Supporting FIles */,
+			);
+			path = GoogleApiIntegration;
+			sourceTree = "<group>";
+		};
+		757ECBD01F8FA4FD00D63C17 /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				757ECBD21F8FA64A00D63C17 /* Responses */,
+				757ECBD11F8FA64100D63C17 /* Requests */,
+			);
+			name = "Data model";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		757ECBD11F8FA64100D63C17 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		757ECBD21F8FA64A00D63C17 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				757ECBD31F8FA66E00D63C17 /* ApiManager.swift */,
+				757ECBD51F8FA68800D63C17 /* CustomLocationResponse.swift */,
+				757ECBD71F8FA69C00D63C17 /* Location.swift */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		7582ED321F8E3802005EFDCE /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
 				750984D51F8D072D009D9FB9 /* Assets.xcassets */,
 				750984D71F8D072D009D9FB9 /* LaunchScreen.storyboard */,
 				750984DA1F8D072D009D9FB9 /* Info.plist */,
+				75C7796E1F8D090F0086745E /* GoogleApiIntegration-Bridging-Header.h */,
+				750984CE1F8D072D009D9FB9 /* AppDelegate.swift */,
 			);
-			path = GoogleApiIntegration;
+			name = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		7582ED331F8E3822005EFDCE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				750984D01F8D072D009D9FB9 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7582ED341F8E3836005EFDCE /* StoryBoard and Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				750984D21F8D072D009D9FB9 /* Main.storyboard */,
+			);
+			name = "StoryBoard and Xibs";
+			sourceTree = "<group>";
+		};
+		B2D91827FB9A60A56632556E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17F95A4FEB40EEF8A07BAA74 /* Pods-GoogleApiIntegration.debug.xcconfig */,
+				A3FC7CB1B4104B924C26BFA3 /* Pods-GoogleApiIntegration.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 750984DD1F8D072D009D9FB9 /* Build configuration list for PBXNativeTarget "GoogleApiIntegration" */;
 			buildPhases = (
+				C650BBDE9C6B8877618ABA37 /* [CP] Check Pods Manifest.lock */,
 				750984C71F8D072D009D9FB9 /* Sources */,
 				750984C81F8D072D009D9FB9 /* Frameworks */,
 				750984C91F8D072D009D9FB9 /* Resources */,
+				1E4E91C6E5A2F1A625EDDC3B /* [CP] Embed Pods Frameworks */,
+				40729C34162B3F8EA3CA1111 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +183,7 @@
 				TargetAttributes = {
 					750984CA1F8D072D009D9FB9 = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,12 +219,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E4E91C6E5A2F1A625EDDC3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40729C34162B3F8EA3CA1111 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleApiIntegration/Pods-GoogleApiIntegration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C650BBDE9C6B8877618ABA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleApiIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		750984C71F8D072D009D9FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757ECBD41F8FA66E00D63C17 /* ApiManager.swift in Sources */,
 				750984D11F8D072D009D9FB9 /* ViewController.swift in Sources */,
+				757ECBD61F8FA68800D63C17 /* CustomLocationResponse.swift in Sources */,
+				757ECBD81F8FA69C00D63C17 /* Location.swift in Sources */,
 				750984CF1F8D072D009D9FB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,24 +412,31 @@
 		};
 		750984DE1F8D072D009D9FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F95A4FEB40EEF8A07BAA74 /* Pods-GoogleApiIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoogleApiIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.GoogleApiIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoogleApiIntegration.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleApiIntegration/GoogleApiIntegration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		750984DF1F8D072D009D9FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FC7CB1B4104B924C26BFA3 /* Pods-GoogleApiIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoogleApiIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.GoogleApiIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoogleApiIntegration.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoogleApiIntegration/GoogleApiIntegration-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +460,7 @@
 				750984DF1F8D072D009D9FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
